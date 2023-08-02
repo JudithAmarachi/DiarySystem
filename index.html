@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbase Diary System</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="page" class="bg-dark">
+    <div class="container p-5 ">
+        <!-- Heading Text -->
+    <h1 class="text-center p-3 text-white text-uppercase"> Webbase Diary System</h1>
+    <div class=" bg-black w-100 p-3">
+        <!-- Paragraph Text -->
+    <p class="text-white-50 w-100 text-center">Keep record of your daily experience </p>
+        <!-- Text Display Container -->
+    <div class="w-75 bg-white item_box m-auto ">
+    <form id="add-items">
+        <!-- Submit and View Button -->
+    <div class=" justify-content-end d-flex border-bottom mb-4">
+    <button class="p-2 w-25 bg-dark text-light m-2 " id="post_btn" name="popupwindow">Submit</button>
+    <button class="p-2 w-25 bg-dark text-light m-2 ">View</button>
+    </div>
+        <!-- Closing Submit and View Button -->
+</form>
+    </div>
+        <!-- Closing Text Display Container -->
+
+        <!-- Input Text and Date Container -->
+    <div class="w-100 ">
+    <div class="w-75 text-light d-flex justify-content-center m-auto ">
+    <input type="text" id="text_input" placeholder="Enter text description" class="bg-transparent border-light m-1">
+    <input type="date" id="time_input" class="bg-transparent border-light m-1">
+    </div>
+    </div>
+        <!-- Closing Input Text and Time Container -->
+      
+        <!-- Add and Remove Button Container -->
+    <div class="btn-btn w-100 m-auto mt-4 d-flex justify-content-center"> 
+    <button onclick="trigger()" class="w-25 bg-dark text-light m-2">Add</button>
+    <button id="removeitem" class="w-25 bg-dark text-light m-2">Remove</button>
+    </div>
+        <!-- Closing Add and Remove Button Container -->
+    </div>
+    </div><!-- Closing container -->
+    </div><!-- closing page -->
+
+   
+        <!-- Javascript Section -->
+
+    <script src="js/main.js"></script>
+    <script src="js/submit.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

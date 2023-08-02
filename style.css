@@ -1,0 +1,60 @@
+/* ==========================================================================
+  01. GENERAL & BASIC STYLES
+  =========================================================================== */
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+  } 
+  
+  body {
+    color: #6c757d;
+    line-height: 1.6666;
+    font-family: "Archivo", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    overflow-x: hidden; 
+  }
+  
+  
+  /*------------------------------------------*/
+/*  PAGE CONTENT
+/*------------------------------------------*/
+
+#page { overflow: hidden; height: 100vh auto; }
+
+
+.item_box form{
+  height: 50vh;
+  overflow: hidden scroll;
+  scroll-behavior: smooth;
+  position: relative;
+}
+.item_box form::after{
+  content: "TEXT DISPLAY";
+  position: absolute;
+  font-weight: bold;
+  bottom: 35%;
+  right: 25%;
+  opacity: 0.3;
+  font-size: 50px;
+  color:lightgrey;
+
+}
+button{
+  padding: 15px;
+  outline: none;
+  border: none;
+}
+
+input{
+  padding: 15px;
+  font-size: 20px;
+  width: 49%;
+  color: white;
+  outline: none;
+  border: none;
+  border: 1px solid white;
+}
+
